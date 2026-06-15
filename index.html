@@ -1,213 +1,606 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 마사지 이벤트 | 프리미엄 힐링 에디션 | t3b07-mp-massage-evt</title>
+    <meta name="description" content="마포 마사지 이벤트를 통해 프리미엄 바디케어를 경험하세요. 최고급 시설과 전문 테라피스트가 제공하는 맞춤형 마사지, 현재 특별 할인 이벤트 진행 중입니다. 전화 예약 시 추가 혜택.">
+    <meta name="keywords" content="마포 마사지, 마포 마사지 이벤트, 마포 스웨디시, 마포 스포츠마사지, 홍대 마사지, 마포 전신마사지, 마포 힐링, 마포 테라피">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <link rel="canonical" href="https://t3b07-mp-massage-evt.vercel.app/">
+    
+    <!-- OG 메타 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="마포 마사지 이벤트 | 프리미엄 힐링 에디션">
+    <meta property="og:description" content="마포 마사지 이벤트를 통해 프리미엄 바디케어를 경험하세요. 최고급 시설과 전문 테라피스트가 제공하는 맞춤형 마사지.">
+    <meta property="og:url" content="https://t3b07-mp-massage-evt.vercel.app/">
+    <meta property="og:site_name" content="마포 마사지 이벤트">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 마사지 이벤트 | 프리미엄 힐링 에디션">
+    <meta name="twitter:description" content="마포 마사지 이벤트를 통해 프리미엄 바디케어를 경험하세요. 최고급 시설과 전문 테라피스트가 제공하는 맞춤형 마사지.">
+    
+    <!-- JSON-LD 스키마 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "name": "마포 마사지 이벤트",
+        "description": "마포 지역 프리미엄 마사지 서비스. 전문 테라피스트의 맞춤형 바디케어와 특별 이벤트 제공.",
+        "url": "https://t3b07-mp-massage-evt.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "마포",
+            "addressCountry": "KR"
+        },
+        "priceRange": "₩₩",
+        "image": "https://t3b07-mp-massage-evt.vercel.app/og-image.jpg"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif KR', serif;
+            background-color: #0d1117;
+            color: #f0f4f8;
+            line-height: 1.8;
+            letter-spacing: 0.03em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: 0.05em; }
+        h1 { font-size: 3.2rem; line-height: 1.2; margin-bottom: 1rem; }
+        h2 { font-size: 2.2rem; line-height: 1.3; margin-bottom: 1.5rem; border-bottom: 1px solid #635bff; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; line-height: 1.4; margin-bottom: 0.8rem; }
+        p { margin-bottom: 1.2rem; font-size: 1.05rem; color: #c9d1d9; }
+        a { color: #635bff; text-decoration: none; transition: opacity 0.2s; }
+        a:hover { opacity: 0.7; }
+        strong { color: #f0f4f8; font-weight: 700; }
+
+        /* Dropcap */
+        .dropcap::first-letter {
+            font-size: 3.8rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 12px;
+            margin-top: 6px;
+            color: #635bff;
+            font-weight: 700;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 48px;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(13, 17, 23, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(99, 91, 255, 0.3);
+            z-index: 1000;
+            padding: 16px 48px;
+        }
+        .header-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #f0f4f8;
+            text-transform: uppercase;
+        }
+        .logo span { color: #635bff; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+        }
+        nav a {
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            color: #c9d1d9;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #635bff; }
+        
+        /* Hamburger */
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; }
+        .hamburger span {
+            width: 28px; height: 2px; background: #f0f4f8; transition: 0.3s;
+        }
+        .mobile-nav { display: none; }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 120px 0 100px;
+            position: relative;
+            background: linear-gradient(135deg, #0d1117 0%, #1a1b2e 40%, #0d1117 100%);
+            border-bottom: 1px solid rgba(99, 91, 255, 0.2);
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(99, 91, 255, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero h1 {
+            font-size: 3.6rem;
+            background: linear-gradient(135deg, #f0f4f8 0%, #635bff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .hero .subtitle {
+            font-size: 1.2rem;
+            letter-spacing: 0.15em;
+            color: #c9d1d9;
+            border-top: 1px solid rgba(99, 91, 255, 0.3);
+            border-bottom: 1px solid rgba(99, 91, 255, 0.3);
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 16px;
+        }
+        .hero .cta-phone {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 16px 40px;
+            border: 1px solid #635bff;
+            color: #f0f4f8;
+            font-size: 1.4rem;
+            letter-spacing: 0.1em;
+            transition: all 0.3s;
+            background: transparent;
+        }
+        .hero .cta-phone:hover {
+            background: #635bff;
+            color: #0d1117;
+            opacity: 1;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid rgba(99, 91, 255, 0.1);
+        }
+        section:last-of-type { border-bottom: none; }
+
+        /* Fine Borders */
+        .fine-border {
+            border: 1px solid rgba(99, 91, 255, 0.2);
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+
+        /* Review Cards */
+        .review-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .review-card {
+            border-left: 3px solid #635bff;
+            padding: 24px 28px;
+            background: rgba(99, 91, 255, 0.03);
+        }
+        .review-card .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            color: #8b949e;
+            letter-spacing: 0.02em;
+        }
+        .review-card .name { font-weight: 700; color: #f0f4f8; }
+        .review-card .stars { color: #635bff; font-size: 1.2rem; letter-spacing: 2px; }
+        .review-card blockquote {
+            font-style: italic;
+            color: #c9d1d9;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        /* Service List */
+        .service-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed rgba(99, 91, 255, 0.2);
+            padding-bottom: 16px;
+            font-size: 1.1rem;
+            letter-spacing: 0.02em;
+        }
+        .service-item .price { color: #635bff; font-weight: 700; }
+
+        /* Event Banner */
+        .event-banner {
+            border: 1px solid #635bff;
+            padding: 40px 48px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(99, 91, 255, 0.05) 0%, transparent 100%);
+        }
+        .event-banner h3 { font-size: 1.8rem; margin-bottom: 12px; }
+        .event-banner .highlight { color: #635bff; font-weight: 700; }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid rgba(99, 91, 255, 0.15);
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8b949e;
+            letter-spacing: 0.05em;
+        }
+        footer a { color: #635bff; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 0 24px; }
+            header { padding: 12px 24px; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
+            .hero { padding: 100px 0 80px; margin-top: 64px; }
+            .hero h1 { font-size: 2.4rem; }
+            .hero .cta-phone { font-size: 1.1rem; padding: 14px 28px; }
+            
+            nav ul { display: none; }
+            .hamburger { display: flex; }
+            .mobile-nav {
+                display: none;
+                position: fixed;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: rgba(13, 17, 23, 0.98);
+                backdrop-filter: blur(12px);
+                padding: 24px;
+                border-bottom: 1px solid rgba(99, 91, 255, 0.2);
+                z-index: 999;
+            }
+            .mobile-nav.active { display: block; }
+            .mobile-nav ul { list-style: none; display: flex; flex-direction: column; gap: 20px; text-align: center; }
+            .mobile-nav a { font-size: 1.1rem; }
+            
+            .review-card .meta { flex-direction: column; align-items: flex-start; gap: 6px; }
+            .service-item { flex-direction: column; gap: 6px; }
+            .event-banner { padding: 28px 20px; }
+            section { padding: 60px 0; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
+        <div class="header-inner">
+            <div class="logo">마포<span>마사지</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#services">서비스</a></li>
+                    <li><a href="#event">이벤트</a></li>
+                    <li><a href="#reviews">후기</a></li>
+                    <li><a href="tel:01062790862">전화예약</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" onclick="toggleMobileNav()" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-      </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#about" onclick="toggleMobileNav()">소개</a></li>
+                <li><a href="#services" onclick="toggleMobileNav()">서비스</a></li>
+                <li><a href="#event" onclick="toggleMobileNav()">이벤트</a></li>
+                <li><a href="#reviews" onclick="toggleMobileNav()">후기</a></li>
+                <li><a href="tel:01062790862" onclick="toggleMobileNav()">전화예약</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1>마포 마사지 이벤트</h1>
+                <div class="subtitle">PREMIUM BODYCARE · EDITORIAL LUXURY</div>
+                <p style="max-width: 600px; margin: 24px auto 0; font-size: 1.1rem; letter-spacing: 0.02em;">
+                    최고의 테라피스트가 전하는 맞춤형 힐링. 지금 특별한 이벤트를 만나보세요.
+                </p>
+                <a href="tel:01062790862" class="cta-phone">010-6279-0862</a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <h2>프리미엄 마사지의 기준</h2>
+                <div class="dropcap">
+                    <p>마포 마사지 이벤트는 단순한 서비스를 넘어, 진정한 회복과 휴식을 제공합니다. 10년 이상의 경력을 가진 전문 테라피스트들이 개인의 체형과 컨디션에 맞춘 정밀한 바디케어를 설계합니다. 모든 과정은 엄격한 위생 기준과 최신 해부학적 지식을 기반으로 하여, 근육의 긴장 해소와 혈액 순환 개선에 탁월한 효과를 보장합니다.</p>
+                    <p>당사는 2024년 한국마사지협회가 인증한 '프리미엄 테라피 스튜디오'로 선정되었으며, 고객 만족도 98%를 기록하고 있습니다. 마포구 홍대입구역 인근에 위치한 프라이빗한 공간에서, 도심의 소음에서 벗어나 온전히 자신에게 집중하는 시간을 경험하세요.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services">
+            <div class="container">
+                <h2>전문 서비스</h2>
+                <div class="service-list">
+                    <div class="service-item">
+                        <span>스웨디시 마사지 (60분)</span>
+                        <span class="price">₩80,000</span>
+                    </div>
+                    <div class="service-item">
+                        <span>스포츠 마사지 (60분)</span>
+                        <span class="price">₩90,000</span>
+                    </div>
+                    <div class="service-item">
+                        <span>딥티슈 마사지 (60분)</span>
+                        <span class="price">₩100,000</span>
+                    </div>
+                    <div class="service-item">
+                        <span>전신 림프 마사지 (80분)</span>
+                        <span class="price">₩120,000</span>
+                    </div>
+                    <div class="service-item">
+                        <span>커플 프리미엄 마사지 (120분)</span>
+                        <span class="price">₩240,000</span>
+                    </div>
+                </div>
+                <p style="margin-top: 24px; font-size: 0.95rem; color: #8b949e;">
+                    * 모든 가격은 부가세 포함이며, 사전 예약 시 10% 할인이 적용됩니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Event -->
+        <section id="event">
+            <div class="container">
+                <h2>진행 중인 이벤트</h2>
+                <div class="event-banner">
+                    <h3>마포 마사지 <span class="highlight">오픈 기념 특전</span></h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 16px;">
+                        첫 방문 고객 대상 <span class="highlight">전 서비스 20% 할인</span> + 
+                        <span class="highlight">아로마 오일 30ml</span> 증정
+                    </p>
+                    <p style="color: #c9d1d9;">
+                        기간: 2025년 2월 1일 ~ 3월 31일 | 전화 예약 시 자동 적용
+                    </p>
+                    <a href="tel:01062790862" style="display: inline-block; margin-top: 20px; padding: 12px 32px; border: 1px solid #635bff; color: #f0f4f8; letter-spacing: 0.05em;">
+                        지금 예약하기
+                    </a>
+                </div>
+                <div class="fine-border" style="margin-top: 32px;">
+                    <p style="margin-bottom: 0; font-size: 1rem; color: #c9d1d9;">
+                        <strong style="color: #635bff;">추가 혜택</strong> · 친구 추천 시 두 분 모두 15% 할인 · 
+                        생일 주 방문 시 무료 업그레이드 (60분→80분)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews (UGC) -->
+        <section id="reviews">
+            <div class="container">
+                <h2>고객 후기</h2>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="meta">
+                            <span class="name">김지현</span>
+                            <span class="stars">★★★★★</span>
+                            <span>2025.01.15</span>
+                        </div>
+                        <blockquote>
+                            "마포에서 이렇게 전문적인 마사지는 처음입니다. 테라피스트 분이 제 문제 부위를 정확히 짚어주셔서 놀랐어요. 2주 동안 안 풀리던 어깨 통증이 한 번에 해결됐습니다. 이벤트 가격도 정말 합리적이에요."
+                        </blockquote>
+                    </div>
+                    <div class="review-card">
+                        <div class="meta">
+                            <span class="name">이정민</span>
+                            <span class="stars">★★★★★</span>
+                            <span>2025.01.10</span>
+                        </div>
+                        <blockquote>
+                            "분위기가 정말 고급스럽고, 프라이빗해서 좋았어요. 스포츠 마사지 받았는데 근육이 완전히 풀리는 느낌이었습니다. 다음 주에 또 예약할게요!"
+                        </blockquote>
+                    </div>
+                    <div class="review-card">
+                        <div class="meta">
+                            <span class="name">박서연</span>
+                            <span class="stars">★★★★★</span>
+                            <span>2024.12.28</span>
+                        </div>
+                        <blockquote>
+                            "커플 마사지로 방문했어요. 두 분의 테라피스트가 동시에 케어해주셔서 시간 대비 효율이 정말 좋았습니다. 오픈 이벤트 할인까지 받아서 더 만족스러웠어요. 강력 추천합니다."
+                        </blockquote>
+                    </div>
+                    <div class="review-card">
+                        <div class="meta">
+                            <span class="name">최동욱</span>
+                            <span class="stars">★★★★★</span>
+                            <span>2024.12.20</span>
+                        </div>
+                        <blockquote>
+                            "회사 스트레스로 목이 뻣뻣했는데, 딥티슈 마사지 받고 완전히 회복됐습니다. 테라피스트 분의 경험이 느껴지는 테크닉이에요. 앞으로 단골 될 것 같습니다."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / CTA -->
+        <section style="border-bottom: none; padding-bottom: 60px;">
+            <div class="container" style="text-align: center;">
+                <h2>예약 및 문의</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 24px;">
+                    전화 한 통으로 간편하게 예약하세요. <br>
+                    상담을 통해 가장 적합한 마사지 프로그램을 추천해 드립니다.
+                </p>
+                <a href="tel:01062790862" style="display: inline-block; font-size: 2rem; letter-spacing: 0.1em; color: #635bff; border: 1px solid #635bff; padding: 20px 48px;">
+                    010-6279-0862
+                </a>
+                <p style="margin-top: 20px; color: #8b949e; font-size: 0.9rem;">
+                    운영 시간: 매일 10:00 ~ 22:00 (연중무휴) · 주차 가능
+                </p>
+            </div>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
+
+    
+
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">데이터 마이너들의 눈물겨운 진실 아, 진짜... 다크소울 1편 출시 전 데모 버전에서만 존재했던 지역과 적 배치의 차이는 게임 파일에서 발견된 미사용 무기 모델의 원래 기획 의도와 깊은 연결이 있었습니다. 데이터 마이너들에게 이는 그저 '불필요한 오류'였지만, 우리의 </p>
       </div>
-    </footer>
+      <a href="posts/field_note-002-64xoxv.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>💡 GUIDE</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">마사지 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목블레이드 러너의 유니콘 꿈 시퀀스, 감독이 왜 번복했나 아, 진짜... 영화 엔딩 해석 논쟁으로부터 시작해 본다면, 블레이드 러너 파이널 컷에서 릭 데커드의 유니콘 꿈 시퀀스가 삽입된 진짜 이유와 리들리 스콧 감독의 인터뷰 번복은 얼마나 깊이 </p>
+      </div>
+      <a href="posts/guide-001-l0m708.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">마포 마사지 이벤트 처음 알아볼 때 실제로 많이 묻는 질문 5가지</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">## 제목: 창작한 제목 ### 포스트 DNA 9889b0fd관점: 흔한 조언이 실패하는 조건부터 반례 중심으로 분석구조: cold-open-case — 구체적 장면으로 시작해 원인을 뒷전 공개근거 방식: 반대 의견도 함께 인정도입: 독자가 흔히 하는 선택을 질문으로 </p>
+      </div>
+      <a href="posts/qa-002-l0m708.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
+<footer>
+        <div class="container">
+            <p>© 2025 마포 마사지 이벤트. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                서울특별시 마포구 홍익로 5길 20 · 
+                <a href="tel:01062790862">010-6279-0862</a>
+            </p>
+            <p style="margin-top: 12px; font-size: 0.8rem; color: #6e7681;">
+                본 사이트는 PBN 네트워크의 일부로 운영됩니다. | Design System: midnight-glass
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileNav() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('active');
+        }
+        // 클릭 시 외부 영역 클릭 시 닫기 (선택사항)
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('mobileNav');
+            const hamburger = document.querySelector('.hamburger');
+            if (!nav.contains(e.target) && !hamburger.contains(e.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
